@@ -9,7 +9,7 @@ import com.example.demo.rest.Rest;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		Rest.p = "test";
+		Rest.p = "test7";
 		SpringApplication.run(DemoApplication.class, args);		
 	}
 }
