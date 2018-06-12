@@ -1,0 +1,9 @@
+Konfiguracja mysql;
+Ustawienie bind-addres i port w ./etc/my.cnf.d/server.cnfnano 
+Wypuszczenie portu mySQl na zewnatrz
+firewall-cmd --zone=dmz --add-port=2888/tcp --permanent
+firewall-cmd --zone=public --add-port=2888/tcp --permanent
+firewall-cmd --reload
+Opcjonalnie wylaczenie selinux /etc/eslinux
+Ustawienie privilages 
+GRANT ALL PRIVILEGES ON *.* TO 'michal'@'%' IDENTIFIED BY 'Binladen.11' WITH GRANT OPTION
